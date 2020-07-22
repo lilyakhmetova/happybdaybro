@@ -31,4 +31,5 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
-new CircleType(document.getElementById('text'))
+new CircleType(document.getElementById('text'));
+new CircleType(document.getElementById('text2'))

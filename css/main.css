@@ -34,7 +34,6 @@ h1 {
 }
 
 .first {
-  display: run-in;
   animation: blink 4s ease infinite;
 }
 
