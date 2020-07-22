@@ -77,6 +77,10 @@ h1 {
   animation: rotate 20s linear infinite;
 }
 
+#text2 {
+  animation: rotate 20s linear infinite;
+}
+
 @keyframes rotate {
 
   100% {
