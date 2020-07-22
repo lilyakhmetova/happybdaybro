@@ -1,0 +1,87 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "Druk";
+  src: url("../fonts/Druk Text Wide Cyr Medium.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica.otf") format("opentype");
+  font-style: normal;
+}
+
+body {
+  font-family: "Helvetica";
+  font-family: sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 5vw;
+  letter-spacing: 20px;
+}
+
+.first {
+  display: run-in;
+  animation: blink 4s ease infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.second {
+  opacity: 0%;
+  animation: reverseblink 4s ease infinite;
+}
+
+@keyframes reverseblink {
+  40% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#text {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
